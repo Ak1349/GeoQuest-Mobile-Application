@@ -1,5 +1,10 @@
 # Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
+# AI assistant tooling (not part of the app)
+.claude/
+CLAUDE.md
+AGENTS.md
+
 # dependencies
 node_modules/
 
@@ -31,6 +36,7 @@ yarn-error.*
 *.pem
 
 # local env files
+.env
 .env*.local
 
 # typescript
