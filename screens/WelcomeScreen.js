@@ -26,6 +26,7 @@ export default function WelcomeScreen({ navigation }) {
           title="Create Account"
           onPress={() => navigation.navigate('Register')}
           style={styles.registerButton}
+          textStyle={styles.registerButtonText}
         />
       </View>
     </SafeAreaView>
@@ -95,5 +96,8 @@ const styles = StyleSheet.create({
   registerButton: {
     marginTop: SPACING.md,
     borderColor: COLORS.textInverse,
+  },
+  registerButtonText: {
+    color: COLORS.textInverse,
   },
 });

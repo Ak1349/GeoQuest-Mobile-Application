@@ -8,6 +8,7 @@ export default function SecondaryButton({
   disabled,
   loading,
   style,
+  textStyle,
   accessibilityLabel,
 }) {
   return (
@@ -25,9 +26,9 @@ export default function SecondaryButton({
       ]}
     >
       {loading ? (
-        <ActivityIndicator color={COLORS.primary} />
+        <ActivityIndicator color={textStyle?.color || COLORS.primary} />
       ) : (
-        <Text style={styles.text}>{title}</Text>
+        <Text style={[styles.text, textStyle]}>{title}</Text>
       )}
     </Pressable>
   );
